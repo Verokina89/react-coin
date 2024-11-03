@@ -121,9 +121,9 @@ ul {
 }
   
 ul li {
-	background-color: #f9f9f9;
-	margin: 0.5rem 0;
-	padding: 0.5rem;
+	background-color: #f9f9f9b4;
+	margin: 12px;
+	padding: 10px;
 	border-radius: 5px;
 	box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 	
