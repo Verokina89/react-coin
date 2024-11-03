@@ -102,11 +102,12 @@ button {
 	padding: 0.5rem 1rem;
 	font-size: 1rem;
 	color: #fff;
-	background-color: #4caf50;
-	border: none;
+	background-color: #49514a9b;
+	border:#2d2d2d ;
 	border-radius: 5px;
 	cursor: pointer;
-	margin-top: 1rem;
+	margin: 1rem;
+	
 }
   
 button:hover {
@@ -125,6 +126,7 @@ ul li {
 	padding: 0.5rem;
 	border-radius: 5px;
 	box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+	
 }
   
 a {
@@ -137,8 +139,8 @@ a:hover {
 }
   
 p {
-	color: #666;
-	font-size: 1rem;
+	color: #2d2d2d;
+	font-size: 20px;
 }
 
 
