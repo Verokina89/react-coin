@@ -58,7 +58,9 @@ body {
 h1 {
 	color: #333;
 	font-size: 2rem;
-	margin-bottom: 1rem;
+	margin: 20px;
+	padding: 10px;
+	box-shadow: 4px 4px 9px rgba(0, 0, 0, 0.924);
 }
   
 header {
@@ -71,8 +73,8 @@ header {
   
 header nav {
 	display: flex;
-	gap: 10px;
-	justify-content: space-between;
+	gap: 80px;
+	justify-content:center ;
 }
   
 header a {
@@ -96,6 +98,10 @@ main {
 	text-align:center ;
 	font-size: 20px;
 	
+}
+
+main a {
+	box-shadow: 4px 4px 9px rgba(0, 0, 0, 0.924);
 }
   
 button {
@@ -121,14 +127,17 @@ ul {
 }
   
 ul li {
+	display: inline-block;
 	background-color: #f9f9f9b4;
 	margin: 12px;
-	padding: 10px;
+	padding: 6px;
 	border-radius: 5px;
 	box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 	
 }
-  
+ 
+
+
 a {
 	text-decoration: none;
 	color: #333;
