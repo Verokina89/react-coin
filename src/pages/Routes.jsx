@@ -1,22 +1,20 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Root from '../Root';
-import Home from '../pages/Home';
-import Coin from '../pages/Coin';
-import Favorites from '../pages/Favorites';
+import Root from './Root';
+import Home from './Home';
+import Coin from './Coin';
+import Favorites from './Favorites';
 
-function RoutesConf() {
+function RoutesConfig() {
   return (
-    <Router>
-      <Root>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="coin/:id" element={<Coin />} />
-          <Route path="favorites" element={<Favorites />} />
-        </Routes>
-      </Root>
-    </Router>  
+    <Routes>
+      <Route path="/" element={<Root />}> 
+        <Route index element={<Home />} />  
+        <Route path="coin/:id" element={<Coin />} />
+        <Route path="favorites" element={<Favorites />} />
+      </Route>
+    </Routes>
   );
 }
 
-export default RoutesConf;
+export default RoutesConfig;

@@ -16,7 +16,7 @@ function Favorites() {
         <p>No favorites.</p>
       ) : (
         <ul>
-          {favorites.map(crypto => (
+            {favorites.map(crypto => (
             <li key={crypto.id}>
               <Link to={`/coin/${crypto.id}`}>{crypto.name}</Link>
             </li>
