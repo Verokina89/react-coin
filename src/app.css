@@ -46,7 +46,109 @@ table {
 
 
 /*CODIGO*/
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: Arial, sans-serif;
+  }
+  
+  body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	background-color: #f0f2f5;
+  }
+  
+  h1 {
+	color: #333;
+	font-size: 2rem;
+	margin-bottom: 1rem;
+  }
+  
+  header {
+	background-color: #333;
+	padding: 1rem;
+  }
+  
+  header nav {
+	display: flex;
+	gap: 1rem;
+	justify-content: center;
+  }
+  
+  header a {
+	color: #fff;
+	text-decoration: none;
+	font-weight: bold;
+  }
+  
+  header a:hover {
+	color: #4caf50;
+  }
+  
+  main {
+	max-width: 600px;
+	padding: 1rem;
+	background-color: #fff;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	border-radius: 8px;
+	text-align: center;
+  }
+  
+  button {
+	padding: 0.5rem 1rem;
+	font-size: 1rem;
+	color: #fff;
+	background-color: #4caf50;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	margin-top: 1rem;
+  }
+  
+  button:hover {
+	background-color: #45a049;
+  }
+  
+  ul {
+	list-style: none;
+	padding: 0;
+	margin-top: 1rem;
+  }
+  
+  ul li {
+	background-color: #f9f9f9;
+	margin: 0.5rem 0;
+	padding: 0.5rem;
+	border-radius: 5px;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  a {
+	text-decoration: none;
+	color: #333;
+  }
+  
+  a:hover {
+	color: #4caf50;
+  }
+  
+  p {
+	color: #666;
+	font-size: 1rem;
+  }
 
+
+
+
+
+
+
+
+
+/* 
 #root {
   max-width: 1280px;
   margin: 0 auto;
@@ -117,4 +219,4 @@ button{
 
 .read-the-docs {
   color: #888;
-}
+} */
