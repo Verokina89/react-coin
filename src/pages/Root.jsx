@@ -1,6 +1,7 @@
 //componente principal con la barra de navegacin(renderiza contenido de las ruta ntrnas)
 import React from 'react';
 import { Outlet, Link } from 'react-router-dom';
+import logo from '../assets/img/logoCryptoMoneda.jpg'
 
 function Root() {
     return (
@@ -12,7 +13,7 @@ function Root() {
                 </nav>
             </header>
             <main>
-                <h1>CryptoCoin</h1>
+                <img src={logo} alt="logo CryptoCoin" style={{ maxWidth: '100%', height: 'auto' }} />
                 <Outlet />
             </main>
         </div>
