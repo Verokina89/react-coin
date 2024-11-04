@@ -47,12 +47,13 @@ table {
 /*codigo*/
   
 body {
+	font-family: 'Roboto', sans-serif;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	flex-wrap: wrap;
 	height: 100vh;
-	background-color: #a5c1ab;
+	background-color: #a5c1aba8;
 }
   
 h1 {
@@ -64,11 +65,13 @@ h1 {
 }
   
 header {
-	background-color: #333;
-	padding: 1rem;
+	background-color: #3333335d;
+	padding: 18px;
 	position: sticky;
 	top: 0;
 	z-index: 1000;
+	border-radius: 8px;
+	
 }
   
 header nav {
@@ -78,10 +81,11 @@ header nav {
 }
   
 header a {
-	color: #ffffff;
+	color: #ffffffd3;
 	text-decoration: none;
-	font-size: 26px;
+	font-size: 38px;
 	font-weight: bold;
+	text-shadow: 4px 4px 9px rgba(0, 0, 0, 0.867);
 }
   
 header a:hover {
@@ -91,33 +95,42 @@ header a:hover {
 main {
 	flex-wrap: wrap;
 	max-width: 400px;
-	padding: 20px;
-	background-color: #61ab64;
+	padding: 80px;
+	background-color: #56ba5ad9;
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 	border-radius: 8px;
 	text-align:center ;
 	font-size: 20px;
-	
+	margin-top: 10px;
+}
+
+main:hover{
+	padding: 160px;
+	background-color: #89df8ca4;
+	align-items: center;
 }
 
 main a {
+	border-radius: 6px;
+	padding: 8px;
 	box-shadow: 4px 4px 9px rgba(0, 0, 0, 0.924);
 }
   
 button {
 	padding: 0.5rem 1rem;
-	font-size: 1rem;
+	font-size: 20px;
 	color: #fff;
 	background-color: #49514a9b;
-	border:#2d2d2d ;
+	border:#f0eeee ;
 	border-radius: 5px;
 	cursor: pointer;
-	margin: 1rem;
+	margin: 18px;
 	
 }
   
 button:hover {
-	background-color: #45a049;
+	color: #dedc43;
+	background-color: #030303dc;
 }
   
 ul {
@@ -129,29 +142,35 @@ ul {
 ul li {
 	display: inline-block;
 	background-color: #f9f9f9b4;
-	margin: 12px;
-	padding: 6px;
+	margin: 10px;
+	padding: 8px;
 	border-radius: 5px;
 	box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 	
 }
- 
 
 
 a {
 	text-decoration: none;
 	color: #333;
+	padding: 8px;
+	text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
   
 a:hover {
-	color: #4caf50;
+	color: #e1de59;
 }
   
 p {
 	color: #2d2d2d;
-	font-size: 20px;
+	font-size: 26px;
+	margin: 10px;
 }
 
+p:hover {
+	color: #2d2d2d;
+	font-size: 34px;
+}
 
 @keyframes logo-spin {
 	from {
