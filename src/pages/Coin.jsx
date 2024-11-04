@@ -1,15 +1,27 @@
 import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
+import ErrorPage from './Err';
 
 function Coin() {
   const { id } = useParams();
   const [crypto, setCrypto] = useState(null);
+  const [error, setError] = useState(null);
 
   useEffect(() => {
     const fetchCrypto = async () => {
+      try { 
       const response = await fetch(`https://api.coincap.io/v2/assets/${id}`);
+      if (!response.ok) {
+        throw new Error('Error fetching crypto data'); // Lanza un error si la respuesta no es 200
+      }
+
       const data = await response.json();
       setCrypto(data.data);
+
+      } catch (err) {
+      setError(err.message); // Guarda el mensaje de error
+      }
+
     };
 
     fetchCrypto();
@@ -28,6 +40,10 @@ function Coin() {
     }
   };
 
+  if (error) {
+    return <ErrorPage />; //muestra  pagina de error si hay
+  }
+  //si los datos no se cargan
   if (!crypto) return <div>Loading...</div>;
 
   return (
