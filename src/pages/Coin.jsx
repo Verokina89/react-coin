@@ -12,14 +12,14 @@ function Coin() {
       try { 
       const response = await fetch(`https://api.coincap.io/v2/assets/${id}`);
       if (!response.ok) {
-        throw new Error('Error fetching crypto data'); // Lanza un error si la respuesta no es 200
+        throw new Error('Error fetching crypto data'); //lanza un error si la respuesta no es 200
       }
 
       const data = await response.json();
       setCrypto(data.data);
 
       } catch (err) {
-      setError(err.message); // Guarda el mensaje de error
+      setError(err.message); //guarda mensaje de error
       }
 
     };
@@ -30,11 +30,11 @@ function Coin() {
   const handleFavorite = () => {
     const favorites = JSON.parse(localStorage.getItem('favorites')) || [];
     if (favorites.find(coin => coin.id === crypto.id)) {
-      // Eliminar de favoritos
+      //eliminar de favoritos
       const updatedFavorites = favorites.filter(coin => coin.id !== crypto.id);
       localStorage.setItem('favorites', JSON.stringify(updatedFavorites));
     } else {
-      // Agregar a favoritos
+      //agregar a favoritos
       favorites.push(crypto);
       localStorage.setItem('favorites', JSON.stringify(favorites));
     }
